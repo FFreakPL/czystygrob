@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext, createContext} from 'react';
 import { useNavigate } from "react-router-dom";
 import Header from './Header';
-import Contact from './Contact';
-import Prices from './Prices';
-import About from './About';
+// import Contact from './Contact';
+// import Prices from './Prices';
+// import About from './About';
 
 export default function LandingPage(){
     const navigate = useNavigate();

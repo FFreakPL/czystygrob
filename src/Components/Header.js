@@ -5,7 +5,7 @@ export default function Header() {
     const navigate = useNavigate();
 
     const backToMainPage = () => {
-        navigate("../landingpage")
+        navigate("/")
     }
 
     return (
