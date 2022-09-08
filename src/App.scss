@@ -1,0 +1,15 @@
+//Reset
+@import "./Sass/Reset.scss";
+@import "./Sass/Colors.scss";
+@import "./Sass/Fonts.scss";
+@import "./Sass/Mixin.scss";
+@import "./Sass/Keyframes.scss";
+
+@import "./Sass/Header.scss";
+
+
+.app {
+  max-width: 100%;
+  max-height: 100%;
+  font-family: $primary-font;
+}
