@@ -1,0 +1,30 @@
+.footer {
+  height: 4vh;
+
+  &_container {
+    box-shadow: 1px -8px 24px 0px $shadow-color;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  img {
+    height: 3vh;
+  }
+
+  &_info {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1vh;
+  }
+
+  &_icons {
+    margin-right: 1rem;
+  }
+
+  &_icons a:first-of-type {
+    margin-right: 1rem;
+  }
+}

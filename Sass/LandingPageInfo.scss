@@ -1,0 +1,28 @@
+.info {
+  min-height: 88vh;
+  background-image: url("../src/Assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    font-size: 2vh;
+    text-align: center;
+    line-height: 3vh;
+    background-color: #ffffff61;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  &_logo {
+    font-family: $third-font;
+    font-size: 3vh;
+  }
+}
