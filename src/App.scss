@@ -7,6 +7,7 @@
 
 @import "./Sass/Header.scss";
 @import "./Sass/Footer.scss";
+@import "./Sass/Carousel.scss";
 @import "./Sass/LandingPageInfo.scss";
 
 
@@ -14,4 +15,9 @@
   max-width: 100%;
   max-height: 100%;
   font-family: $primary-font;
+}
+
+.fa-basket-shopping-simple {
+  color: $primary-color;
+  font-size: 2vh;
 }

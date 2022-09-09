@@ -1,20 +1,46 @@
 import React  from 'react';
+import Carousel, {CarouselItem} from "./Carousel";
 import { useNavigate } from "react-router-dom";
 
 export default function LandingPageInfo() {
+    const navigate = useNavigate();
+    const subPages = [
+        {
+            name: "visit",
+            description: "Odwiedziny grobu",
+            info: ""
+        },
+        {
+            name: "cleaning",
+            description: "Sprzątanie grobu"
+        },
+        {
+            name: "washing",
+            description: "Umycie grobu"
+        },
+        {
+            name: "additional",
+            description: "Usługi dodatkowe"
+        }
+    ];
+
     return(
         <section className="info">
             <article className="info_description">
-                <p>
-                    <span className="info_logo">WiecznaCzystość</span> to nie tylko firma. To rodzinna inicjatywa podjęta żeby należycie zadbać o jak
-                    największą ilość grobów, które niekiedy są niestety w bardzo złym stanie. Grób jest jedynym miejscem,
-                    gdzie możemy przebywać poniekąd w obecności naszych ukochanych zmarłych. Czysty grób świadczy
-                    natomiast o pamięci o tych, którzy byli bliscy naszemu sercu. W dzisiejszym świecie nie każdy ma
-                    niestety czas lub możliwości aby upamiętniać bliskich troszcząc się o ich nagrobek. Z tego względu
-                    stworzyliśmy naszą rodzinną firmę - aby ułatwić dbanie o groby bliskich tym wszystkim, którzy o nich
-                    pamiętają i dalej darzą ich miłością lecz z różnych względów nie mogą należycie dbać o miejsce spoczynku
-                    bliskich.
-                </p>
+
+                <Carousel>
+                    {subPages.map((subPage, index) =>
+                        <CarouselItem key={index}>
+                            <div
+                                className={`carousel_${subPages[index].name}`}
+                                onClick={() => navigate(`/${subPages[index].name}`)}>
+                                <div className="carousel_info_container">
+                                    <p className="carousel_info">{subPages[index].description}</p>
+                                </div>
+                            </div>
+                        </CarouselItem>)}
+                </Carousel>
+
             </article>
         </section>
     )

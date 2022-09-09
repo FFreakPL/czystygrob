@@ -19,6 +19,8 @@ export default function Header() {
                 <li className="menu_element"><a href="./about" className="menu_route">O nas</a></li>
                 <li className="menu_element"><a href="./prices" className="menu_route">Cennik</a></li>
                 <li className="menu_element"><a href="./contact" className="menu_route">Kontakt</a></li>
+                <li className="menu_element"><a href="./basket" className="menu_route">
+                    <i className="fa-solid fa-basket-shopping"></i></a></li>
             </nav>
         </header>
     )

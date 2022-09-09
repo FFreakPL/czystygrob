@@ -1,0 +1,154 @@
+.carousel {
+  overflow: hidden;
+  //height: 82vh;
+
+  &_info {
+    font-size: 4vh;
+    font-weight: 200;
+    color: white;
+
+    &_container{
+      width: 30%;
+      height: 30%;
+      background-color: #00000085;
+      border-radius: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include mobile{
+        width: 80%;
+        height: 30%;
+      }
+      @include tablet{
+        width: 60%;
+        height: 30%;
+      }
+    }
+  }
+
+  &_button_prev,
+  &_button_prev, {
+    margin: 5px;
+  }
+  &_button_prev {
+    position: absolute;
+    top: 40%;
+    left: 4.5vw;
+    margin: 5px;
+    border: none;
+    border-radius: 15px;
+    padding: 1rem;
+    opacity: 0.9;
+    background-color: #000000b3;;
+    @include mobile {
+      display:none;
+    }
+
+  }
+  &_button_next {
+    position: absolute;
+    top: 40%;
+    right: 4.5vw;
+    margin: 5px;
+    border: none;
+    border-radius: 15px;
+    padding: 1rem;
+    opacity: 0.9;
+    background-color: #000000b3;;
+    @include mobile {
+      display:none;
+    }
+  }
+  &_item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    color: $primary-color;
+    font-size: 2rem;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 92%;
+  }
+
+  &_indicators {
+    display: flex;
+    justify-content: center;
+
+
+    button.active {
+      background-color: $background-color;
+      color: $primary-color;
+      transition: .3s ease;
+
+    }
+  }
+  &_btn {
+    border-radius: 50%;
+    border: 2px solid $shadow-color;
+    opacity: 0.5;
+    background-color: transparent;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width:1rem;
+    height:1rem;
+  }
+
+  &_container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_visit {
+    @include urls;
+    @include flex;
+    background-image: url("../src/Assets/6.jpg");
+    @include projectsStyle;
+  }
+  &_cleaning {
+    @include urls;
+    @include flex;
+    background-image: url("../src/Assets/11.jpg");
+    @include projectsStyle;
+  }
+  &_washing {
+    @include urls;
+    @include flex;
+    background-image: url("../src/Assets/16.jpg");
+    @include projectsStyle;
+  }
+  &_additional {
+    @include urls;
+    @include flex;
+    background-image: url("../src/Assets/14.jpg");
+    @include projectsStyle;
+  }
+  &_header {
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+  }
+}
+.inner {
+  white-space: nowrap;
+  transition: transform .3s;
+}
+.fa-arrow-left-long {
+  color: white;
+  font-size: 3rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.fa-arrow-right-long {
+  color: white;
+  font-size: 3rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
