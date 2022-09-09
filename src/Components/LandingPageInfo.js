@@ -1,5 +1,6 @@
 import React  from 'react';
 import Carousel, {CarouselItem} from "./Carousel";
+import Prices from "./Prices";
 import { useNavigate } from "react-router-dom";
 
 export default function LandingPageInfo() {
@@ -25,6 +26,7 @@ export default function LandingPageInfo() {
     ];
 
     return(
+        <>
         <section className="info">
             <article className="info_description">
 
@@ -43,5 +45,7 @@ export default function LandingPageInfo() {
 
             </article>
         </section>
+            <Prices/>
+            </>
     )
 }

@@ -105,13 +105,13 @@
   &_visit {
     @include urls;
     @include flex;
-    background-image: url("../src/Assets/6.jpg");
+    background-image: url("../src/Assets/8.jpg");
     @include projectsStyle;
   }
   &_cleaning {
     @include urls;
     @include flex;
-    background-image: url("../src/Assets/11.jpg");
+    background-image: url("../src/Assets/10.jpg");
     @include projectsStyle;
   }
   &_washing {
